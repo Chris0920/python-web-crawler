@@ -4,8 +4,6 @@ def get_next_target(page):
     if start_link == -1:
         return None, 0
     else:
-    #Insert your code below here
-    
         start_quote = page.find('"', start_link)
         end_quote = page.find('"', start_quote + 1)
         url = page[start_quote + 1:end_quote]
@@ -27,4 +25,4 @@ def print_all_links(page):
 		else:
 			break
 
-# print_all_links(get_page('http://xkcd.com/353'))
+print_all_links(get_page('url-goes-here'))
