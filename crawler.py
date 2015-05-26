@@ -23,6 +23,6 @@ def print_all_links(page):
 			print url
 			page = page[endpos:]
 		else:
-			break
+			break  
 
 print_all_links(get_page('url-goes-here'))
